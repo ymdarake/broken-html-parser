@@ -1,0 +1,19 @@
+{
+  "name": "broken-html-parser",
+  "version": "1.0.0",
+  "private": false,
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc && mocha",
+    "build": "tsc && bundle-js dist/index.js -o dist/bundle.js && browserify dist/bundle.js -o browser.js",
+    "watch": "tsc -w"
+  },
+  "dependencies": {
+    "axios": "^0.19.2"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/node": "^13.11.1",
+    "mocha": "^7.1.1"
+  }
+}
